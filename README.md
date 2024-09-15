@@ -1,2 +1,2 @@
 # html-css
- curdo de html-css
+ curso de html-css
