@@ -5,4 +5,4 @@ Estou aprendendo a criar sites e agora vou gerenciar meus repositórios!
 
 <a href="https://ramosg7.github.io/html-css/Exercícios/ex020/hover.html">Abrir o exercício 020 hover</a>
 
-<a href="https://ramosg7.github.io/html-css/Exercícios/ex020/">Abrir exercício aula 022</a>
+<a href="https://ramosg7.github.io/html-css/Exercícios/ex022/">Abrir exercício aula 022</a>
