@@ -6,9 +6,33 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="cadastro.c" method="post" autocomplete="off">
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.c" method="get" autocomplete="off">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required maxlength="38" placeholder="Nome Completo">
+        </p>
+        <p>
+            <label for="imedia">Média:</label>
+            <input type="number" name="media" id="imedia" required placeholder="0 a 10" min="0" max="10" step="0.1">
+        </p>
+        <p>
+            <label for="imes">Período Letivo</label>
+            <input type="month" name="mes" id="imes" required>
+        </p>
+        <p>
+            <label for="idia">Dia do Exame</label>
+            <input type="date" name="dia" id="idia" required>
+        </p>
+        <p>
+            <label for="ihora">Horário</label>
+            <input type="time" name="hora" id="ihora" required>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
 
-        
     </form>
 </body>
 </html>
