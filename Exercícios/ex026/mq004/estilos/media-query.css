@@ -1,3 +1,76 @@
 @charset "UTF-8";
 
 /* Todas as demais mídias */
+
+/* Typical devide Breakpoints 
+pequenas telas: até 576
+celular: 576 até 767
+tablet: 768 até 1200
+desktop: 1201 à até 1400
+grandes telas: 1400+
+*/
+
+@media print{ /*IMPRESSORA*/
+    img#phone{ display: none;}
+    img#tablet{ display: none;}
+    img#print{ display: block;}
+    img#pc{ display: none;}
+    img#tv{ display: none;}
+
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body{
+        background-image: url(../imagens/back-print.jpg); /* DESNECESSÁRIO */
+    }
+
+    main{
+        border: 2px solid red;
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px){ /*TABLET*/
+    img#phone{ display: none;}
+    img#tablet{ display: block;}
+    img#print{ display: none;}
+    img#pc{ display: none;}
+    img#tv{ display: none;}
+
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px){ /*COMPUTADOR*/
+    img#phone{ display: none;}
+    img#tablet{ display: none;}
+    img#print{ display: none;}
+    img#pc{ display: block;}
+    img#tv{ display: none;}
+
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+}
+
+@media screen and (min-width: 1401px){ /*TELEVISÕES OU TELAS MAIORES*/
+    img#phone{ display: none;}
+    img#tablet{ display: none;}
+    img#print{ display: none;}
+    img#pc{ display: none;}
+    img#tv{ display: block;}
+
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+}
