@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+        </span>
+
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, amet libero ab minima id ad, velit vel eveniet delectus explicabo alias nemo nostrum? Perspiciatis minima similique aspernatur? Esse, totam quibusdam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur voluptatum quae pariatur officiis fuga nesciunt distinctio dolorum nam dolore, provident illum velit accusantium laboriosam ratione commodi, reprehenderit alias nulla perferendis.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam molestias saepe numquam dolor eligendi quasi fugit qui eos, laborum animi nesciunt, delectus inventore. Cupiditate, nobis reprehenderit possimus assumenda quidem vitae?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolor nemo ut expedita dolore. Molestias est repudiandae repellat impedit eaque numquam aperiam placeat, obcaecati amet reiciendis velit adipisci nostrum nihil?
+            Officiis officia repellat, odio culpa beatae aspernatur quia quo neque, in obcaecati qui et sed iure eligendi ab, possimus expedita tempora laborum? Quae officia adipisci amet vitae. Iusto, reprehenderit odio!
+            Facere dicta sapiente adipisci corrupti vero sequi ut distinctio, itaque iusto perspiciatis ipsa quidem beatae labore, impedit necessitatibus pariatur maxime sit possimus aspernatur. Accusamus odio ipsam id deleniti necessitatibus itaque!</p>
+        </article>
+    </main>
+
+    <script>
+        function clickMenu(){
+             if (itens.style.display == 'block') {
+                 itens.style.display = 'none'
+            } else{
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
