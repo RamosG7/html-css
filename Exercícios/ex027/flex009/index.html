@@ -10,6 +10,8 @@
             border: 1px solid black;
 
             display: flex;
+            flex-flow: row nowrap;
+
         }
 
         div.item{
@@ -18,17 +20,18 @@
             color: red;
             text-align: center;
 
-            flex: auto;
+            flex-basis: 200px;
+
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
+        <div class="item">Conteúdo menor</div>
+        <div class="item">Esse já será um pouco maior</div>
         <div class="item">D</div>
-        <div class="item">E</div>
+        <div class="item">Aqui vai um conteúdo ainda maior que os outros, veja só</div>
         <div class="item">F</div>
         <div class="item">G</div>
     </div>
